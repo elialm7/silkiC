@@ -12,5 +12,11 @@ typedef enum {
     OP_RETURN
 }OP_CODE;
 
+/*
+ this struct is going to be a wrapper for the bytecode instructions.
+*/
+typedef struct {
+    uint8_t* code;
+}Chunk;
 
 #endif // !chunk_h
