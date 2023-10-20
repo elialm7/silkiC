@@ -16,6 +16,8 @@ typedef enum {
  this struct is going to be a wrapper for the bytecode instructions.
 */
 typedef struct {
+    int capacity; // the numbers of elements in the array
+    int count; // how many allocations are in used.
     uint8_t* code;
 }Chunk;
 
