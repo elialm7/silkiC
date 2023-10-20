@@ -11,7 +11,7 @@ BUILD_DIR = build
 # Source files, object files, and target executable
 SRCS = $(wildcard $(SRC_DIR)/*.c $(SRC_DIR)/*.cpp)
 OBJS = $(patsubst $(SRC_DIR)/%.c, $(BUILD_DIR)/%.o, $(patsubst $(SRC_DIR)/%.cpp, $(BUILD_DIR)/%.o, $(SRCS)))
-TARGET = $(BUILD_DIR)/my_program.exe
+TARGET = $(BUILD_DIR)/silkiC.exe
 
 # Targets and rules
 all: $(TARGET)
