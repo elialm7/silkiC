@@ -1,3 +1,4 @@
+#This is only for windows.
 # Compiler and flags
 CC = gcc
 CXX = g++
