@@ -21,4 +21,6 @@ typedef struct {
     uint8_t* code;
 }Chunk;
 
+void initChunk(Chunk* chunk); // we use this function to initilize our chunk.
+
 #endif // !chunk_h
