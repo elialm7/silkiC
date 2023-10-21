@@ -10,6 +10,7 @@ void initChunk(Chunk* chunk){
     chunk->count = 0;
     chunk->code = NULL;
 }
+//we write our chunk in our dinamic array.
 void writeChunk(Chunk *chunk, uint8_t byte){
     if(chunk->capacity < chunk->count +1){
         int oldcapacity = chunk->capacity;
@@ -19,5 +20,9 @@ void writeChunk(Chunk *chunk, uint8_t byte){
     chunk->code[chunk->count] = byte;
     chunk->count++;
 
+}
+void freeChunk(Chunk* chunk){
+    FREE_ARRAY(uint8_t, chunk->code, chunk->capacity);
+    initChunk(chunk);
 }
 
