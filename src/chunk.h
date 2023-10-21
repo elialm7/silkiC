@@ -22,5 +22,6 @@ typedef struct {
 }Chunk;
 
 void initChunk(Chunk* chunk); // we use this function to initilize our chunk.
-void writeChunk(Chunk* chunk, uint8_t byte);
+void freeChunk(Chunk* chunk); //for freeing our chunks
+void writeChunk(Chunk* chunk, uint8_t byte); // for writing our chunks into our dynamic array
 #endif // !chunk_h
