@@ -21,6 +21,8 @@ void writeChunk(Chunk *chunk, uint8_t byte){
     chunk->count++;
 
 }
+/* this methods frees the chunk array from memory, it doesn't delete it from memory just reallocates it. 
+*/
 void freeChunk(Chunk* chunk){
     FREE_ARRAY(uint8_t, chunk->code, chunk->capacity);
     initChunk(chunk);
